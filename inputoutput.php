@@ -1,2 +1,3 @@
 <?php
-echo "halo Hisyam Al Husaini";
+$nama = readline ("masukkan nama anda : ");
+echo "Halo {$nama} ";
