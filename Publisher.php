@@ -1,18 +1,12 @@
 <?php
 class Publisher {
-    public $nama;
-    public $alamat;
-    public $tahunBerdiri;
+    public $name;
+    public $address;
+    public $font;
 
-    // Konstruktor
-    public function __construct($nama, $alamat, $tahunBerdiri) {
-        $this->nama = $nama;
-        $this->alamat = $alamat;
-        $this->tahunBerdiri = $tahunBerdiri;
-    }
-
-    // Method untuk menampilkan informasi penerbit
-    public function tampilkanInfo() {
-        return "Penerbit: $this->nama, Alamat: $this->alamat, Berdiri Sejak: $this->tahunBerdiri";
+    public function __construct($name, $address, $font) {
+        $this->name = $name;
+        $this->address = $address;
+        $this->font = $font;
     }
 }

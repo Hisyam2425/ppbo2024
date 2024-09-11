@@ -1,51 +1,8 @@
 <?php
 
-// Kelas Publisher
-class Publisher {
-    public $name;
-    public $address;
-    public $font;
-
-    public function __construct($name, $address, $font) {
-        $this->name = $name;
-        $this->address = $address;
-        $this->font = $font;
-    }
-}
-
-// Kelas Author
-class Author {
-    public $name;
-    public $description;
-
-    public function __construct($name, $description) {
-        $this->name = $name;
-        $this->description = $description;
-    }
-}
-
-// Kelas Book
-class Book {
-    public $ISBN;
-    public $title;
-    public $description;
-    public $category;
-    public $language;
-    public $numberOfPage;
-    public $author;
-    public $publisher;
-
-    public function __construct($ISBN, $title, $description, $category, $language, $numberOfPage, Author $author, Publisher $publisher) {
-        $this->ISBN = $ISBN;
-        $this->title = $title;
-        $this->description = $description;
-        $this->category = $category;
-        $this->language = $language;
-        $this->numberOfPage = $numberOfPage;
-        $this->author = $author;
-        $this->publisher = $publisher;
-    }
-}
+require_once 'Publisher.php';
+require_once 'Author.php';
+require_once 'Book.php';
 
 // Contoh penggunaan
 $publisher = new Publisher("Penerbit ABC", "Jl. Contoh No. 123, Jakarta", "Arial");
