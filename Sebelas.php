@@ -1,5 +1,7 @@
 <?php
-require_once 'App/Admin/Dosen.php';  
+
+require_once 'App/Admin/Dosen.php'; 
+
 $dian = new \App\Admin\Dosen(
     '198411132015041001',  
     'Dian Prawira',        
