@@ -4,7 +4,7 @@ namespace App\Model\Akademik;
 require_once 'Pegawai.php';
 
 class Dosen extends Pegawai {
-    public $nidn;
+    private $nidn;
 
     public function __construct($nip, $nama, $no_hp, $alamat, $nidn) {
         parent::__construct($nip, $nama, $no_hp, $alamat);
