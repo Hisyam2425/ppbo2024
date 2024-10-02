@@ -1,10 +1,10 @@
 <?php
-namespace App\Admin;
+namespace App\Model\Akademik;
 
 class Pegawai {
     public $nip;
     public $nama;
-    public $no_hp;
+    protected $no_hp;
     public $alamat;
 
     public function __construct($nip, $nama, $no_hp, $alamat) {
@@ -22,7 +22,7 @@ class Pegawai {
         return true;
     }
 
-    public function getNoHP() {
+    protected function getNoHP() {
         return $this->no_hp;
     }
 
